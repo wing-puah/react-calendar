@@ -1,0 +1,757 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar renders correctly 1`] = `
+Array [
+  <div>
+    12:50:08 AM
+  </div>,
+  <div
+    className="calendar"
+  >
+    <a
+      download="generatedBy_react-csv.csv"
+      href="data:text/csv;charset=utf-8,﻿\\"subject\\",\\"startdate\\",\\"starttime\\",\\"enddate\\",\\"endtime\\",\\"location\\",\\"description\\""
+      onClick={[Function]}
+      target="_self"
+    >
+      Export all events
+    </a>
+    <div
+      className="calendar__nav"
+    >
+      <button
+        className="prev"
+        onClick={[Function]}
+        value="prev"
+      >
+        &lt;
+      </button>
+      <h2>
+        Mar
+         
+        2019
+      </h2>
+      <button
+        className="next"
+        onClick={[Function]}
+        value="next"
+      >
+        &gt;
+      </button>
+    </div>
+    <div
+      className="calendar__header"
+    >
+      <div
+        className="calendar__col"
+      >
+        Sunday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Monday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Tuesday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Wednesday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Thursday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Friday
+      </div>
+      <div
+        className="calendar__col"
+      >
+        Saturday
+      </div>
+    </div>
+    <div
+      className="calendar__body"
+    >
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value="24"
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            24
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={25}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            25
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={26}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            26
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={27}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            27
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={28}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            28
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={1}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            1
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={2}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            2
+          </div>
+        </div>
+      </div>
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value={3}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            3
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={4}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            4
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={5}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            5
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={6}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            6
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={7}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            7
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={8}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            8
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={9}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            9
+          </div>
+        </div>
+      </div>
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value={10}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            10
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={11}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            11
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={12}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            12
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={13}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            13
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={14}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            14
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={15}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            15
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={16}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value={17}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            17
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={18}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            18
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={19}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            19
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={20}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            20
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={21}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            21
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={22}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            22
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={23}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            23
+          </div>
+        </div>
+      </div>
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value={24}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            24
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={25}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            25
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={26}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            26
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={27}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            27
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={28}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            28
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={29}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            29
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={30}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            30
+          </div>
+        </div>
+      </div>
+      <div
+        className="calendar__row"
+      >
+        <div
+          className="calendar__col"
+          value={31}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            31
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={1}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            1
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={2}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            2
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={3}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            3
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={4}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            4
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={5}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            5
+          </div>
+        </div>
+        <div
+          className="calendar__col"
+          value={6}
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "underline",
+              }
+            }
+          >
+            6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="calendar__row"
+    >
+      <div
+        className="calendar__col"
+      >
+        month: 
+        Mar
+         year: 
+        2019
+         last date: 
+        31
+         first day: 
+        Fri
+      </div>
+    </div>
+  </div>,
+]
+`;

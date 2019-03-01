@@ -3,24 +3,10 @@ import Days from './days';
 import Timer from './time';
 import { CSVLink } from "react-csv";
 
-function prepareCSV() {
-  let csvData = ["subject", "startdate", "starttime", "enddate", "endtime", "location", "description"];
-  let csvToSend = [csvData];
-
-  Object.keys(localStorage).forEach(function(key, idx){
-    let rows = localStorage.getItem(key);
-    const parseRows = JSON.parse(rows);
-    const { subject, startdate, starttime, enddate, endtime, location, description } = parseRows;
-    const csvRow = [subject, startdate, starttime, enddate, endtime, location, description];
-    csvToSend[idx+1] = csvRow;
-  });
-  return csvToSend;
-}
-
 class Calendar extends Component {
   state = {
       calendarTimeStamp: new Date(),
-      currentMonthIdx: 0,
+      currentMonthIdx: Number,
   }
 
   componentDidMount() {
@@ -80,6 +66,20 @@ class Calendar extends Component {
       </Fragment>
     );
   }
+}
+
+function prepareCSV() {
+  let csvData = ["subject", "startdate", "starttime", "enddate", "endtime", "location", "description"];
+  let csvToSend = [csvData];
+
+  Object.keys(localStorage).forEach(function(key, idx){
+    let rows = localStorage.getItem(key);
+    const parseRows = JSON.parse(rows);
+    const { subject, startdate, starttime, enddate, endtime, location, description } = parseRows;
+    const csvRow = [subject, startdate, starttime, enddate, endtime, location, description];
+    csvToSend[idx+1] = csvRow;
+  });
+  return csvToSend;
 }
 
 export default Calendar;

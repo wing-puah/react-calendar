@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './modal.css';
+import './styles/modal.css';
 import FormInput from './modalFormInput';
 
 class Popup extends React.Component {

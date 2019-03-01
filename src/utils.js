@@ -1,21 +1,21 @@
 function timeFns(timeStamp) {
   const month = timeStamp.getUTCMonth();
   const year = timeStamp.getUTCFullYear();
-  const date = timeStamp.getUTCDate();
+  // const date = timeStamp.getUTCDate();
   const setFirstDateOfMth = new Date(timeStamp.setUTCDate(1));
-  const getFirstDayOfMth = setFirstDateOfMth.getDay();
+  const getFirstDayOfMth = setFirstDateOfMth.getUTCDay();
   const getLastDateOfMth = new Date(year, month+1, 0);
-  const getLastDayOfMth = getLastDateOfMth.getDay();
+  const getLastDayOfMth = getLastDateOfMth.getUTCDay();
   const toLocalStorageString = year.toString().concat(
     month > 9
       ? month
       : '0' + month.toString()
   );
-
+  // console.log('running');
   return {
     setFirstDateOfMth,
     getFirstDayOfMth,
-    day: timeStamp.getDay(),
+    selectedDay: timeStamp.getUTCDay(),
     getLastDateOfMth,
     getLastDayOfMth,
     toLocalStorageString,

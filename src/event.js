@@ -1,7 +1,7 @@
 import React,  { Fragment, useState } from 'react';
 import Popup from './modal';
 import { sendToLocalStorage } from './utils';
-import './event.css'
+import './styles/event.css'
 
 const deleteEv = (e, callback) => {
   localStorage.removeItem(e);
