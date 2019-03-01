@@ -1,0 +1,56 @@
+.modal-container.false {
+  display: none;
+}
+
+.modal-container.true {
+  z-index: 5;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+
+.modal-container:before {
+  content: '';
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background: #888;
+  opacity: 0.6;
+}
+
+.modal {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+
+.modal .form {
+  position: relative;
+  border: 3px solid var(--table-border);
+  top: 10%;
+  width: 80%;
+  margin: auto;
+  height: 80%;
+  background: white;
+  opacity: 1;
+}
+
+.modal button.close {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+}
+
+.modal input, .modal textarea {
+  margin: 10px;
+  width: 80%;
+}
+
+.modal label {
+  padding: 10px
+}

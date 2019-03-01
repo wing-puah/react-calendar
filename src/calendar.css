@@ -1,0 +1,36 @@
+.calendar__row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--table-border);
+}
+
+.calendar__header {
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+  border-bottom: 4px solid #A2E8DD;
+  border-top: 1px solid var(--table-border);
+}
+
+.calendar__header .calendar__col {
+  overflow: hidden;
+}
+
+.calendar__col {
+  flex-grow: 1;
+  flex-basis: 10%;
+  padding: 10px;
+  position: relative;
+}
+
+.calendar__col:not(:last-child) {
+  border-right: 1px solid var(--table-border);
+}
+
+.calendar__body .calendar__col {
+  min-height: 80px;
+}
+
+.calendar__col div:hover {
+  cursor: pointer;
+}
