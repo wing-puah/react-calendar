@@ -27,7 +27,7 @@ function getStartOfWeek(timeStamp) {
   const firstDateTimeStamp = timeFns(timeStamp).setFirstDateOfMth;
 
   const firstDateOfWeek = firstDay === 0 ? firstDateTimeStamp
-    : new Date(firstDateTimeStamp.setDate(firstDateTimeStamp.getDate() - firstDay))
+    : new Date(firstDateTimeStamp.setDate(firstDateTimeStamp.getUTCDate() - firstDay))
 
   return firstDateOfWeek;
 }

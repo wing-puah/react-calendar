@@ -8,9 +8,15 @@ import { timeFns, getStartOfWeek, getLastOfWeek, sendToLocalStorage } from './ut
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-const SingleDay = (props) => (
-  <div className="calendar__col">
-    {props.date}
+const SingleDay = ({className, date}) => (
+  <div className={`calendar__col ${className}`}>
+    {date}
+  </div>
+)
+
+const SingleWeek = ({children}) => (
+  <div className="calendar__row">
+    {children}
   </div>
 )
 
@@ -28,26 +34,63 @@ class Days extends React.Component {
     const currentTimeFns = timeFns(currentTimeStamp);
     const firstDayOfMonth = currentTimeFns.getFirstDayOfMth;
     const lastDateOfMonth = currentTimeFns.getLastDateOfMth.getDate();
-    // let startDateOfWeek = firstDayOfMonth !== 0
-    //   ? getStartOfWeek(currentTimeStamp)
-    //   : currentTimeFns.setFirstDateOfMth;
+    let startDateOfWeek = firstDayOfMonth !== 0
+      ? getStartOfWeek(currentTimeStamp)
+      : currentTimeFns.setFirstDateOfMth;
     let i = firstDayOfMonth;
     let dateInLoop = 1;
-    let week;
-    // let month = [];
-    // let day;
-    console.log(lastDateOfMonth)
-    while (dateInLoop < 8) {
-      let day = React.createElement(SingleDay, {key: dateInLoop, date: dateInLoop}, null);
+    let weekOfMonth = 1;
+    let month = [];
+    let week = [];
 
+    // console.log(lastDateOfMonth)
+    function getPastMonthDates() {
+      let pastMonthDateToAddFrom = startDateOfWeek.getUTCDate();
+      let pastMonthDay = 0;
+      let allDatesOfPastMonth = [];
+
+      while(pastMonthDay !== firstDayOfMonth) {
+        let pastMonthDate = React.createElement(SingleDay,
+          {key: `past-${pastMonthDay}`, date: pastMonthDateToAddFrom, className: "calendar__past calendar--disabled"}, null);
+        allDatesOfPastMonth.push(pastMonthDate);
+
+        pastMonthDateToAddFrom += 1;
+        pastMonthDay += 1;
+      }
+      return [allDatesOfPastMonth];
+    }
+
+    function getDatesOfFirstWeekOfCurrentMth(el) {
+      let firstWeekDate = 1;
+      let firstWeekDay = el;
+      let allDatesOfFirstWeek = [];
+
+      while (firstWeekDay < 7) {
+          let currentDate = React.createElement(SingleDay, {key: firstWeekDay, date: firstWeekDate}, null);
+          allDatesOfFirstWeek.push(currentDate);
+
+          firstWeekDate += 1;
+          firstWeekDay += 1;
+      }
+      return [allDatesOfFirstWeek];
+    }
+
+    while (dateInLoop < 3) {
+      if (firstDayOfMonth !== 0)  {
+        const PastMonthDates = getPastMonthDates();
+        const FirstWeekCurrentMonthDates = getDatesOfFirstWeekOfCurrentMth(firstDayOfMonth);
+        week = React.createElement(SingleWeek, {key: weekOfMonth}, [PastMonthDates, FirstWeekCurrentMonthDates]);
+      }
+      let day = React.createElement(SingleDay, {key: dateInLoop, date: dateInLoop, day: i}, null);
+      // week[2] = day
       if (i === 7) {
+        // month[weekOfMonth] = week
         i = 0;
-        week = React.createElement('div', {className: 'calendar__row'}, day);
       } else {
         i += 1;
       }
       console.log('day', day)
-      console.log('week', week)
+      // console.log('week', week)
       dateInLoop += 1;
       // month.push(week)
     }
@@ -152,7 +195,7 @@ class Days extends React.Component {
     this.renderDays();
     return (
       <Fragment>
-        {this.renderDays()}
+
         <div className="calendar__col">
           month: {monthInString} year: {year} last date: {lastDateOfMonth} first day: {firstDayInString}
         </div>
@@ -165,7 +208,7 @@ class Days extends React.Component {
           ))}
         </div>
         <div className="calendar__body">
-
+          {this.renderDays()}
         </div>
       </Fragment>
     )
