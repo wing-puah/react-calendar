@@ -1,5 +1,7 @@
 :root {
   --table-border: #ddd;
+  --disabled: #909090;
+  --disabled-bg: #eee;
 }
 
 body {

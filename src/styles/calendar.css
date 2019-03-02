@@ -34,3 +34,8 @@
 .calendar__col div:hover {
   cursor: pointer;
 }
+
+.calendar--disabled {
+  background: var(--disabled-bg);
+  color: var(--disabled); 
+}

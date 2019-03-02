@@ -4,7 +4,7 @@ function timeFns(timeStamp) {
   // const date = timeStamp.getUTCDate();
   const setFirstDateOfMth = new Date(timeStamp.setUTCDate(1));
   const getFirstDayOfMth = setFirstDateOfMth.getUTCDay();
-  const getLastDateOfMth = new Date(year, month+1, 0);
+  const getLastDateOfMth = new Date(Date.UTC(year, month+1, 0));
   const getLastDayOfMth = getLastDateOfMth.getUTCDay();
   const toLocalStorageString = year.toString().concat(
     month > 9
