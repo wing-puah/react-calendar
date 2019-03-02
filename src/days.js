@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { SingleDay, SingleWeek } from './dayAndWeek';
+import { SingleDay, SingleWeek, PopDay } from './dayAndWeek';
 import { getFirstWeekOfMth, createDaysOfWeek } from './helpers__firstWeek';
 // import Popup from './modal';
 
@@ -17,13 +17,23 @@ function Days(props) {
   const monthInString = timeStamp.toLocaleString('en-US', {month: 'short'});
   const firstDayInString = new Date(year, month).toLocaleString('en-US', {weekday: 'short'});
   const lastDateOfMonth = new Date(year, month + 1, 0).getDate();
+  let [popup, setPopup] = useState(true);
+
+  function openPopup() {
+    console.log('open');
+    setPopup(true);
+  }
+
+  function closePopup() {
+    console.log('close');
+    setPopup(false);
+  }
 
   return (
     <Fragment>
       <div className="calendar__col">
         month: {monthInString} year: {year} last date: {lastDateOfMonth} first day: {firstDayInString}
       </div>
-
       <div className="calendar__header">
         {days.map((el, idx) => (
           <div className="calendar__col" key={idx}>

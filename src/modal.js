@@ -6,49 +6,72 @@ import FormInput from './modalFormInput';
 class Popup extends React.Component {
 
   render () {
-    const { appear, close, selectedTime, data,
-      submitInstructions, onSubmission, onDelete } = this.props;
-    let parseData = false;
-    if(data !== undefined) {
-      parseData = JSON.parse(data)
-    }
-    const defaultDate = new Date(selectedTime.getTime() - (selectedTime.getTimezoneOffset() * 60000 ))
-                        .toISOString()
-                        .split("T")[0];
-
-    const getIdx = data ? parseData.index : 'false';
+    const {data, defaultDate, togglePopup} = this.props;
 
     return (
-      <div
-      className={`modal-container ${appear}`}>
-        <div className="modal">
+          <div
+          className={`modal-container`}>
+            <div className="modal">
 
-          <button
-            className="close"
-            onClick={close}>
-            X
-          </button>
+              <button
+                className="close"
+                onClick={togglePopup}>
+                X
+              </button>
 
-          <form className="form" idx={getIdx} onSubmit={(e) => onSubmission(e)}>
-            <FormInput
-              data={data}
-              startdate={defaultDate} />
-            <input type="submit" value={submitInstructions}/>
-            {onDelete && (
-              <button onClick={() => onDelete(getIdx)}>
-                Delete
-              </button>)}
-          </form>
-        </div>
-      </div>
-    )
+              <form className="form">
+                <FormInput
+                  data={data}
+                  startdate={defaultDate} />
+                <input type="submit" />
+                  <button >
+                    Delete
+                  </button>)
+              </form>
+            </div>
+          </div>
+        )
+    // const { appear, close, selectedTime, data,
+    //   submitInstructions, onSubmission, onDelete } = this.props;
+    // let parseData = false;
+    // if(data !== undefined) {
+    //   parseData = JSON.parse(data)
+    // }
+    // const defaultDate = new Date(selectedTime.getTime() - (selectedTime.getTimezoneOffset() * 60000 ))
+    //                     .toISOString()
+    //                     .split("T")[0];
+    //
+    // const getIdx = data ? parseData.index : 'false';
+
+//     return (
+//       <div
+//       className={`modal-container ${appear}`}>
+//         <div className="modal">
+//
+//           <button
+//             className="close"
+//             onClick={close}>
+//             X
+//           </button>
+//
+//           <form className="form" idx={getIdx} onSubmit={(e) => onSubmission(e)}>
+//             <FormInput
+//               data={data}
+//               startdate={defaultDate} />
+//             <input type="submit" value={submitInstructions}/>
+//             {onDelete && (
+//               <button onClick={() => onDelete(getIdx)}>
+//                 Delete
+//               </button>)}
+//           </form>
+//         </div>
+//       </div>
+//     )
   }
 }
 
 Popup.propTypes = {
-  appear: PropTypes.bool.isRequired,
-  close: PropTypes.func.isRequired,
-  selectedTime: PropTypes.object.isRequired,
+  togglePopup: PropTypes.func.isRequired,
 }
 
 
