@@ -3,7 +3,7 @@
 exports[`Calendar renders correctly 1`] = `
 Array [
   <div>
-    12:50:08 AM
+    2:56:20 PM
   </div>,
   <div
     className="calendar"
@@ -38,6 +38,18 @@ Array [
       >
         &gt;
       </button>
+    </div>
+    <div
+      className="calendar__col"
+    >
+      month: 
+      Mar
+       year: 
+      2019
+       last date: 
+      31
+       first day: 
+      Fri
     </div>
     <div
       className="calendar__header"
@@ -85,108 +97,73 @@ Array [
         className="calendar__row"
       >
         <div
-          className="calendar__col"
-          value="24"
+          className="calendar__col calendar__past calendar--disabled"
         >
+          24
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            24
+            Return this event lor.
+          </div>
+        </div>
+        <div
+          className="calendar__col calendar__past calendar--disabled"
+        >
+          25
+          <div
+            className="event"
+          >
+            Return this event lor.
+          </div>
+        </div>
+        <div
+          className="calendar__col calendar__past calendar--disabled"
+        >
+          26
+          <div
+            className="event"
+          >
+            Return this event lor.
+          </div>
+        </div>
+        <div
+          className="calendar__col calendar__past calendar--disabled"
+        >
+          27
+          <div
+            className="event"
+          >
+            Return this event lor.
+          </div>
+        </div>
+        <div
+          className="calendar__col calendar__past calendar--disabled"
+        >
+          28
+          <div
+            className="event"
+          >
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={25}
         >
+          1
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            25
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={26}
         >
+          2
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            26
-          </div>
-        </div>
-        <div
-          className="calendar__col"
-          value={27}
-        >
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
-          >
-            27
-          </div>
-        </div>
-        <div
-          className="calendar__col"
-          value={28}
-        >
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
-          >
-            28
-          </div>
-        </div>
-        <div
-          className="calendar__col"
-          value={1}
-        >
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
-          >
-            1
-          </div>
-        </div>
-        <div
-          className="calendar__col"
-          value={2}
-        >
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
-          >
-            2
+            Return this event lor.
           </div>
         </div>
       </div>
@@ -195,107 +172,72 @@ Array [
       >
         <div
           className="calendar__col"
-          value={3}
         >
+          3
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            3
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={4}
         >
+          4
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            4
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={5}
         >
+          5
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            5
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={6}
         >
+          6
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            6
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={7}
         >
+          7
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            7
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={8}
         >
+          8
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            8
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={9}
         >
+          9
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            9
+            Return this event lor.
           </div>
         </div>
       </div>
@@ -304,107 +246,72 @@ Array [
       >
         <div
           className="calendar__col"
-          value={10}
         >
+          10
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            10
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={11}
         >
+          11
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            11
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={12}
         >
+          12
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            12
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={13}
         >
+          13
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            13
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={14}
         >
+          14
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            14
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={15}
         >
+          15
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            15
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={16}
         >
+          16
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            16
+            Return this event lor.
           </div>
         </div>
       </div>
@@ -413,107 +320,72 @@ Array [
       >
         <div
           className="calendar__col"
-          value={17}
         >
+          17
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            17
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={18}
         >
+          18
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            18
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={19}
         >
+          19
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            19
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={20}
         >
+          20
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            20
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={21}
         >
+          21
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            21
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={22}
         >
+          22
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            22
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={23}
         >
+          23
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            23
+            Return this event lor.
           </div>
         </div>
       </div>
@@ -522,107 +394,72 @@ Array [
       >
         <div
           className="calendar__col"
-          value={24}
         >
+          24
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            24
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={25}
         >
+          25
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            25
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={26}
         >
+          26
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            26
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={27}
         >
+          27
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            27
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={28}
         >
+          28
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            28
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={29}
         >
+          29
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            29
+            Return this event lor.
           </div>
         </div>
         <div
           className="calendar__col"
-          value={30}
         >
+          30
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            30
+            Return this event lor.
           </div>
         </div>
       </div>
@@ -631,125 +468,74 @@ Array [
       >
         <div
           className="calendar__col"
-          value={31}
         >
+          31
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            31
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={1}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          1
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            1
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={2}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          2
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            2
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={3}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          3
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            3
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={4}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          4
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            4
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={5}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          5
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            5
+            Return this event lor.
           </div>
         </div>
         <div
-          className="calendar__col"
-          value={6}
+          className="calendar__col calendar__next calendar--disabled"
         >
+          6
           <div
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "underline",
-              }
-            }
+            className="event"
           >
-            6
+            Return this event lor.
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="calendar__row"
-    >
-      <div
-        className="calendar__col"
-      >
-        month: 
-        Mar
-         year: 
-        2019
-         last date: 
-        31
-         first day: 
-        Fri
       </div>
     </div>
   </div>,

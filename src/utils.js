@@ -65,5 +65,4 @@ function sendToLocalStorage(form, func, edit) {
   }
 }
 
-
 export { timeFns, getStartOfWeek, getLastOfWeek, sendToLocalStorage };

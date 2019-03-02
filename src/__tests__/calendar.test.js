@@ -1,12 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Calendar from '../calendar'; 
+import { shallow } from 'enzyme';
+import Calendar from '../calendar';
 
 describe('Calendar', () => {
+
   it('renders correctly', () => {
-    const calendar = renderer
-      .create(<Calendar />)
-      .toJSON();
-    expect(calendar).toMatchSnapshot();
+    const results = shallow(<Calendar />);
+    expect(results).to.contain('calendar');
   });
 })
