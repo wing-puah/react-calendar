@@ -1,11 +1,16 @@
 function timeFns(timeStamp) {
   const month = timeStamp.getUTCMonth();
   const year = timeStamp.getUTCFullYear();
+  const shortMth = timeStamp.toLocaleString('en-US', {month: 'short'});
   // const date = timeStamp.getUTCDate();
   const setFirstDateOfMth = new Date(timeStamp.setUTCDate(1));
   const getFirstDayOfMth = setFirstDateOfMth.getUTCDay();
   const getLastDateOfMth = new Date(Date.UTC(year, month+1, 0));
   const getLastDayOfMth = getLastDateOfMth.getUTCDay();
+  const parseForDateInput = new Date(timeStamp.getTime()-(timeStamp.getTimezoneOffset() * 60000))
+                              .toISOString().split('T')[0];
+  const timeOpts = { hour: 'numeric', minute: 'numeric', hour12: false }
+  const parseForTimeInput = timeStamp.toLocaleString('en-US', timeOpts);
   const toLocalStorageString = year.toString().concat(
     month > 9
       ? month
@@ -13,12 +18,17 @@ function timeFns(timeStamp) {
   );
   // console.log('running');
   return {
+    shortMth,
+    month,
+    year,
     setFirstDateOfMth,
     getFirstDayOfMth,
     selectedDay: timeStamp.getUTCDay(),
     getLastDateOfMth,
     getLastDayOfMth,
     toLocalStorageString,
+    parseForDateInput,
+    parseForTimeInput
   }
 }
 

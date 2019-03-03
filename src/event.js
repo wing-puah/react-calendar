@@ -1,6 +1,4 @@
 import React,  { Fragment, useState } from 'react';
-import Popup from './modal';
-import { sendToLocalStorage } from './utils';
 import './styles/event.css'
 
 const deleteEv = (e, callback) => {
@@ -11,12 +9,22 @@ const deleteEv = (e, callback) => {
   }
 }
 
-const Event = ({data}) => {
+const Event = ({data, date}) => {
+  const eventDetails=[];
+
+  data.forEach((el, idx) => {
+    const parseData = JSON.parse(el);
+    if(new Date(parseData.startdate).getUTCDate() === date) {
+      eventDetails.push(parseData);
+    }
+  });
+
   return (
-    <div className="event">
-      {data}
-      Return this event lor.
-    </div>
+    <Fragment>
+      {eventDetails.map((el, idx) => (
+        <div className="event" key={idx}>{el.subject}</div>))
+      }
+    </Fragment>
   )
 }
 

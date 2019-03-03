@@ -41,6 +41,19 @@ function getDatesOfFirstWeekOfCurrentMth(el) {
   return allDatesOfFirstWeek;
 }
 
+function createDaysOfWeek(dateToStartLoop, dayToStartLoop, dayToEndLoop) {
+  let allDates = [];
+
+  while (dayToStartLoop !== dayToEndLoop) {
+    let date = React.createElement(SingleDay, {key: `next-${dayToStartLoop}`, date: dateToStartLoop, className: "calendar__next calendar--disabled"}, null);
+    allDates.push(date);
+
+    dateToStartLoop += 1;
+    dayToStartLoop += 1;
+  }
+  return allDates;
+}
+
 function getFirstWeekOfMth(firstDayOfCurrentMth, firstDateOfWeek) {
   let week;
 
@@ -55,19 +68,6 @@ function getFirstWeekOfMth(firstDayOfCurrentMth, firstDateOfWeek) {
   }
 
   return week;
-}
-
-function createDaysOfWeek(dateToStartLoop, dayToStartLoop, dayToEndLoop) {
-  let allDates = [];
-
-  while (dayToStartLoop !== dayToEndLoop) {
-    let date = React.createElement(SingleDay, {key: `next-${dayToStartLoop}`, date: dateToStartLoop, className: "calendar__next calendar--disabled"}, null);
-    allDates.push(date);
-
-    dateToStartLoop += 1;
-    dayToStartLoop += 1;
-  }
-  return allDates;
 }
 
 export { getFirstWeekOfMth, createDaysOfWeek };

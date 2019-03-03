@@ -35,6 +35,10 @@
   opacity: 1;
 }
 
+.modal button:hover {
+  cursor: pointer;
+}
+
 .modal button.close {
   position: absolute;
   z-index: 1;

@@ -31,11 +31,51 @@
   min-height: 80px;
 }
 
-.calendar__col div:hover {
+/* .calendar__col div:hover {
   cursor: pointer;
-}
+} */
 
 .calendar--disabled {
   background: var(--disabled-bg);
-  color: var(--disabled); 
+  color: var(--disabled);
+}
+
+.addEventBtn {
+  background: #A2E8DD;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  right: 5%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.addEventBtn:hover {
+  background: #6cdbc9;
+  cursor: pointer;
+}
+
+.addEventBtn .btn {
+  position: relative;
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  bottom:5px;
+}
+
+@media screen and (min-width: 600px) {
+  .addEventBtn {
+    right: 5%;
+  }
+
+  .calendar {
+    width: 85%;
+  }
+
+  .calendar__nav {
+    padding: 20px;
+  }
 }

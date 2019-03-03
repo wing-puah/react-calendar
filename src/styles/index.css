@@ -44,11 +44,4 @@ code {
   body {
     padding: 40px;
   }
-
-  .calendar {
-    width: 85%;
-  }
-  .calendar__nav {
-    padding: 20px;
-  }
 }
