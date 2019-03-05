@@ -24,7 +24,7 @@ function CalendarDays(props) {
 
   while (dateInLoop < lastDateOfMonth +1) {
     let day = React.createElement(SingleDay,
-      {key: dateInLoop, date: dateInLoop, day: i}, // In the real world, all the data will not be pass down to so many differnt components
+      {key: dateInLoop, date: dateInLoop, day: i},
       null);
     daysOfWeek.push(day);
 

@@ -19,4 +19,4 @@ function getIndicesOfSum(arr, sum) {
   return indicesOfSum;
 }
 
-getIndicesOfSum([11, 2, 7, 15], 9);
+getIndicesOfSum([11, 2, 7, 15, 3, 6], 9);

@@ -6,15 +6,8 @@ import FormInput from './modalFormInput';
 class Popup extends React.Component {
   render () {
     const { data, timeStamp, togglePopup, formsubmittext, onFormSubmission, onDelete} = this.props;
-    let parseData = false;
-    if(data !== undefined) {
-      try {
-        parseData = JSON.parse(data)
-      } catch {
-        return;
-      }
-    }
-    const getIdx = data ? parseData.index : 'false';
+    let parseData = typeof data !== 'undefined' ? data : false;
+    const getIdx = typeof data !== 'undefined' ? parseData.index : 'false';
 
     return (
       <div className="modal-container">
@@ -27,7 +20,7 @@ class Popup extends React.Component {
           </button>
 
           <form className="form" idx={getIdx} onSubmit={(e) => onFormSubmission(e)}>
-            <FormInput timeStamp={timeStamp} />
+            <FormInput timeStamp={timeStamp} data={parseData}/>
             <input
               type="submit"
               value={formsubmittext}/>

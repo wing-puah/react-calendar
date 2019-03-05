@@ -56,15 +56,13 @@ function createDaysOfWeek(dateToStartLoop, dayToStartLoop, dayToEndLoop) {
 
 function getFirstWeekOfMth(firstDayOfCurrentMth, firstDateOfWeek) {
   let week;
+  const FirstWeekCurrentMonth = getDatesOfFirstWeekOfCurrentMth(firstDayOfCurrentMth);
 
   if (firstDayOfCurrentMth !== 0)  {
     const PastMonthDates = getPastMonthDates(firstDateOfWeek, firstDayOfCurrentMth);
-    const FirstWeekCurrentMonth = getDatesOfFirstWeekOfCurrentMth(firstDayOfCurrentMth);
-    const FirstWeekCurrentMonthDates = FirstWeekCurrentMonth;
-
-    week = React.createElement(SingleWeek, {key: 1}, [PastMonthDates.concat(FirstWeekCurrentMonthDates)]);
+    week = React.createElement(SingleWeek, {key: 1}, [PastMonthDates.concat(FirstWeekCurrentMonth)]);
   } else {
-    week = getDatesOfFirstWeekOfCurrentMth(firstDayOfCurrentMth);
+    week = React.createElement(SingleWeek, {key: 1}, [FirstWeekCurrentMonth]);
   }
 
   return week;

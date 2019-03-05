@@ -7,7 +7,7 @@ function timeFns(timeStamp) {
   const getFirstDayOfMth = setFirstDateOfMth.getUTCDay();
   const getLastDateOfMth = new Date(Date.UTC(year, month+1, 0));
   const getLastDayOfMth = getLastDateOfMth.getUTCDay();
-  const parseForDateInput = new Date(timeStamp.getTime()-(timeStamp.getTimezoneOffset() * 60000))
+  const parseForDateInput = new Date(timeStamp.getTime())
                               .toISOString().split('T')[0];
   const timeOpts = { hour: 'numeric', minute: 'numeric', hour12: false }
   const parseForTimeInput = timeStamp.toLocaleString('en-US', timeOpts);
@@ -16,7 +16,7 @@ function timeFns(timeStamp) {
       ? month
       : '0' + month.toString()
   );
-  // console.log('running');
+
   return {
     shortMth,
     month,
@@ -52,21 +52,20 @@ function getLastOfWeek(timeStamp) {
   return lastDateOfWeek
 }
 
-
 function sendToLocalStorage(form, func, edit) {
   let submission = {};
   const formData = new FormData(form);
   const LSlength = localStorage.length;
   let idx = LSlength > 0 ? Number(localStorage.key(LSlength-1)) +1 : 0;
 
-  submission['index'] = idx;
   for(let entry of formData.entries()) {
     submission[entry[0]] = entry[1];
   }
 
-  if(edit===true){
+  if(edit === true){
     idx = form.getAttribute('idx')
   }
+  submission['index'] = idx;
 
   localStorage.setItem(idx, JSON.stringify(submission));
 

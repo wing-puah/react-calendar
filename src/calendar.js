@@ -27,6 +27,7 @@ class Calendar extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if(this.state.calendarTimeStamp !== prevState.calendarTimeStamp) {
+      console.log(this.state.calendarTimeStamp)
       const currMthEventsAndDates = getAllQuery(timeFns(this.state.calendarTimeStamp).month);
 
       this.setState((state) => ({
@@ -58,7 +59,6 @@ class Calendar extends Component {
       eventData: this.state.allEvents,
       datesWithEvents: this.state.datesWithEvents,
     }
-
     return (
       <EventProvider value={contextValue}>
         <Timer />
